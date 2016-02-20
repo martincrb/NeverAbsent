@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Martin\AndroidStudioProjects\TestLibMuseAndroid\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="C:\Users\Martin\AndroidStudioProjects\TestLibMuseAndroid\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-66034f367c3a824597244be22d9c39aaefb46396.jar" />
+    </item>
+    <item
+        jar="C:\Users\Martin\AndroidStudioProjects\TestLibMuseAndroid\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="C:\Users\Martin\AndroidStudioProjects\TestLibMuseAndroid\app\build\intermediates\pre-dexed\debug\classes-654a5083aefcbf30bc65293dc5511de1874518ba.jar" />
+    </item>
+    <item
+        jar="C:\Users\Martin\AndroidStudioProjects\TestLibMuseAndroid\app\libs\libmuseandroid.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1b7a1ebe2d998c58d6ce2157fa29ef6df6fbdd38">
+        <dex dex="C:\Users\Martin\AndroidStudioProjects\TestLibMuseAndroid\app\build\intermediates\pre-dexed\debug\libmuseandroid-0b3e867e7b62deefffa67e75a2b6bd5ee2723448.jar" />
+    </item>
+    <item
+        jar="C:\Users\Martin\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="C:\Users\Martin\AndroidStudioProjects\TestLibMuseAndroid\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-915b63819f694276d71a837e0b424d3db730cd1b.jar" />
+    </item>
+
+</items>
