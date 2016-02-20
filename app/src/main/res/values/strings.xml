@@ -21,7 +21,7 @@
     <string name="action_add_phone">Add Phone</string>
     <string name="action_refresh_muse">Refresh</string>
     <string name="action_connect_muse">Connect</string>
-    <string name="action_disconnect_muse" />
+    <string name="action_disconnect_muse">Disconnect</string>
     <string name="action_pause_muse">Pause</string>
     <string name="action_log_muse">Write Log</string>
 
