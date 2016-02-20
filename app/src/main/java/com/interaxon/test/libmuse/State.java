@@ -15,6 +15,8 @@ public class State {
     private boolean update;
     private SignalAnalyzer sanalyzer;
 
+    private ServerNotifier snotifier;
+
     State(Context c) {
         context = c;
         sanalyzer = new SignalAnalyzer();
@@ -42,6 +44,12 @@ public class State {
                 }
                 else if (CURRENT_STATE == STATUS_TEXT_NORMAL) {
                     CURRENT_STATE = STATUS_TEXT_ATTACK;
+                    //Attack Starts
+                    //Get actual time
+
+                    //Prepare JSON
+
+                    //Send to server
                 }
             }
         }
