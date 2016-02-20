@@ -38,7 +38,7 @@ public class State {
     void updateState(Signal signal) {
         if (signal != null) {
             sanalyzer.analyze(signal);
-            if (Math.random() < 0.01) {
+           /* if (Math.random() < 0.00) {
                 if (CURRENT_STATE == STATUS_TEXT_ATTACK) {
                     CURRENT_STATE = STATUS_TEXT_NORMAL;
                 }
@@ -52,6 +52,7 @@ public class State {
                     //Send to server
                 }
             }
+            */
         }
     }
 
