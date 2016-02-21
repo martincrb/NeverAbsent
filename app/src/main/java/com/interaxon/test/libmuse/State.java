@@ -36,20 +36,32 @@ public class State {
         return CURRENT_STATE;
     }
 
-    void updateState(Signal signal) {
-        if (signal != null) {
+    void updateState(Signal signal1, Signal signal2, Signal signal3, Signal signal4) {
+        if (signal1 != null && signal2 != null && signal3 != null && signal4 != null) {
             Log.d("Analyzer", "Analyzing");
-            signal.analyzable = false;
-            sanalyzer.analyze(signal);
-            float res = sanalyzer.last_result;
-            if (res < 0) {
+            signal1.analyzable = false;
+            sanalyzer.analyze(signal1);
+            float res1 = sanalyzer.last_result;
+
+            signal2.analyzable = false;
+            sanalyzer.analyze(signal2);
+            float res2 = sanalyzer.last_result;
+
+            signal3.analyzable = false;
+            sanalyzer.analyze(signal3);
+            float res3 = sanalyzer.last_result;
+
+            signal4.analyzable = false;
+            sanalyzer.analyze(signal4);
+            float res4 = sanalyzer.last_result;
+
+            if (res1 < 0 || res2 < 0 || res3 < 0 || res4 < 0) {
                 if (CURRENT_STATE == STATUS_TEXT_NORMAL) {
                     CURRENT_STATE = STATUS_TEXT_ATTACK;
                     //Attack Starts
                     //Get actual time
-
                     //Prepare JSON
-
+                    snotifier.pushDataToServer(createJson(signal1, signal2, signal3, signal4));
                     //Send to server
                 }
             }
@@ -74,6 +86,12 @@ public class State {
             }
             */
         }
+    }
+
+    private String createJson(Signal signal1, Signal signal2, Signal signal3, Signal signal4){
+        return "{ patient : " + "Espartano" +
+                " fecha : " + System.currentTimeMillis() +
+                " "
     }
 
 }

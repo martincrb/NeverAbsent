@@ -210,7 +210,7 @@ public class MainActivity extends Activity {
                          TP10.update(data.get(Eeg.TP10.ordinal()));
                          if (patientState != null) {
                              if (TP9.isAnalyzable()) {
-                                 patientState.updateState(TP9);
+                                 patientState.updateState(TP9, TP10, FP1, FP2);
                              }
                              updateBackgroundColor(patientState.getCurrentStateColor());
                              updateTextColor(patientState.getCurrentStateColor());
