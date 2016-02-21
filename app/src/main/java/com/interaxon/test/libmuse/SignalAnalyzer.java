@@ -12,6 +12,7 @@ public class SignalAnalyzer {
     private float ApEnWeight = 0.535182f;
     private float sampEnWeight = 0.3826242f;
 
+    public float last_result;
     private FFTDetector fftd;
 
 
@@ -30,17 +31,22 @@ public class SignalAnalyzer {
             float[] si = params[0].toFloatArray();
 
             float value = 0;
-
+            Log.d("compute", "Computed");
             float apen = ApEn.computeF(si);
             //Compute sampEn
+            Log.d("APEN", "Computed");
             float sampEn = SampEn.computeF(si);
             //Compute fft
+            Log.d("SAMPEN", "Computed");
             float fft = fftd.computeF(si);
-            return coef0 + FFTWeight*fft + ApEnWeight*apen + sampEnWeight*sampEn;
+            Log.d("FFT", "Computed");
+            value = coef0 + FFTWeight*fft + ApEnWeight*apen + sampEnWeight*sampEn;
+            Log.d("RESULT", Float.toString(value));
+            return value;
         }
 
         protected void onPostExecute(Float result) {
-            Log.d("Computed ",result.toString());
+            last_result = result;
         }
     }
 }

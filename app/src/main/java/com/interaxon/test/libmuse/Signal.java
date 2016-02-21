@@ -13,7 +13,7 @@ public class Signal {
     private int FREQUENCY = 220; //Hz
     private float TIME = 23.6f; //seg
     private int MAX_DATA = Math.round(FREQUENCY * TIME);
-    private float ANALYZE_TIME = 10.0f; // seg
+    private float ANALYZE_TIME = 2.0f; // seg
     private int WAIT_ELEMS = Math.round(FREQUENCY * ANALYZE_TIME);
     private String SEPARATOR = "\t";
     private int current_counter;

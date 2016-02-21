@@ -41,6 +41,23 @@ public class State {
             Log.d("Analyzer", "Analyzing");
             signal.analyzable = false;
             sanalyzer.analyze(signal);
+            float res = sanalyzer.last_result;
+            if (res < 0) {
+                if (CURRENT_STATE == STATUS_TEXT_NORMAL) {
+                    CURRENT_STATE = STATUS_TEXT_ATTACK;
+                    //Attack Starts
+                    //Get actual time
+
+                    //Prepare JSON
+
+                    //Send to server
+                }
+            }
+            else {
+                if (CURRENT_STATE == STATUS_TEXT_ATTACK) {
+                    CURRENT_STATE = STATUS_TEXT_NORMAL;
+                }
+            }
            /* if (Math.random() < 0.00) {
                 if (CURRENT_STATE == STATUS_TEXT_ATTACK) {
                     CURRENT_STATE = STATUS_TEXT_NORMAL;
