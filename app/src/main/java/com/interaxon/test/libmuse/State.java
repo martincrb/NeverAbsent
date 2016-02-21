@@ -1,6 +1,7 @@
 package com.interaxon.test.libmuse;
 
 import android.content.Context;
+import android.util.Log;
 
 /**
  * Created by Martin on 20/02/2016.
@@ -37,6 +38,8 @@ public class State {
 
     void updateState(Signal signal) {
         if (signal != null) {
+            Log.d("Analyzer", "Analyzing");
+            signal.analyzable = false;
             sanalyzer.analyze(signal);
            /* if (Math.random() < 0.00) {
                 if (CURRENT_STATE == STATUS_TEXT_ATTACK) {

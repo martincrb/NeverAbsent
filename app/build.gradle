@@ -25,4 +25,6 @@ android {
 dependencies {
     compile 'com.android.support:support-v4:21.0.3'
     compile files('libs/libmuseandroid.jar')
+    compile files('libs/JTransforms-3.1.jar')
+    compile files('libs/JTransforms-3.1-javadoc.jar')
 }

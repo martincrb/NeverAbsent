@@ -209,7 +209,9 @@ public class MainActivity extends Activity {
                          FP2.update(data.get(Eeg.FP2.ordinal()));
                          TP10.update(data.get(Eeg.TP10.ordinal()));
                          if (patientState != null) {
-                             patientState.updateState(TP9);
+                             if (TP9.isAnalyzable()) {
+                                 patientState.updateState(TP9);
+                             }
                              updateBackgroundColor(patientState.getCurrentStateColor());
                              updateTextColor(patientState.getCurrentStateColor());
                              updateTextMessage(patientState.getCurrentStateName());
